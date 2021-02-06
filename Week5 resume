@@ -1,0 +1,52 @@
+Christian ch
+Java week 5
+
+
+Java Methods:
+Java methods are where you put the operations on data (variables) in your Java code. In other words, you group Java operations (code) inside Java methods. 
+Java methods must be located inside a Java class.
+Method Parameters
+
+Method parameters makes it possible to pass values to the method, which the method can operate on. 
+The method parameters are declared inside the parentheses after the method name.
+Parameters vs. Variables
+A method parameter similar to a variable. You can read its value, and change its value too. 
+Final Parameters
+A Java method parameter can be declared final, just like a variable. The value of a final parameter cannot be changed. That is, if the parameter is a reference to an object, the reference cannot be changed, but values inside the object can still be changed.
+Local variables
+You can declare local variables inside a method. A local variable can be used just like any other variable, but it is only accessible inside the scope of the method.
+Local variables can also be declared final. If you declare a local variable final, its value cannot be changed. If the variable is a reference to an object, the reference to the object cannot be changed, but values inside the referenced object can still be changed.
+Method Return Types
+This method adds the two parameters passed to it, and returns the result.
+First, notice the return type, int, which is marked in bold before the method name (sum). This return type signals that this method returns an int.
+Second, notice the return statement. The return statement determines what value is returned by the method.
+You can return any primitive type or any object from a Java method. You could also return a String,
+Here is a example
+         public String concat (String string1, String string2) {
+                      return string1 + string2;
+Multiple Return Statements
+
+It is possible to have more than one return statement in a method. However, they cannot both be executed. Only one return statement can be executed. Once a return statement is executed, no more code in that method is executed. The program simply jumps back to the code that called the method
+Method Access Modifiers
+You may have noticed the word public which I have put in front of all method declaration examples in this text. This word is the access modifier for the method. The access modifier determines what code is allowed to call this method.
+
+Exception Declarations:
+
+If an error occurs inside a method, the method may throw an exception. Exceptions have to be declared in the method declaration, like this (marked in bold):
+
+This method first checks if either of the two parameters string1 or string2 are null. If they are, an exception is thrown.
+
+Array and arrayList
+Array is a fixed length data structure whereas ArrayList is a variable length Collection class. We cannot change length of array once created in Java but ArrayList can be changed. We cannot store primitives in ArrayList, it can only store objects. But array can contain both primitives and objects in Java
+
+How to create an ArrayList?
+This statement creates an ArrayList with the name alist with type “String”. The type determines which type of elements the list will have. Since this list is of “String” type, the elements that are going to be added to this list will be of type “String”.
+
+Example 
+ArrayList<String> alist=new ArrayList<String>();
+We can also create ArrayList that accepts int elements.
+ArrayList<Integer> list=new ArrayList<Integer>();
+
+How to add elements to an ArrayList?
+We add elements to an ArrayList by using add() method, this method has couple of variations, which we can use based on the requirement. 
+
